@@ -1,0 +1,15 @@
+python -> http服务器
+
+python 注入一个js文件 
+注入的js文件 ->
+export default function () {
+  window.py_api.get_user_info = function () {
+    return new Promise((resolve, reject) => {
+        window.py_api.get_user_info().then(res => {
+            resolve(res)
+        }).catch(err => {
+            reject(err)
+        })
+    })
+  }
+}
