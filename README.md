@@ -35,7 +35,7 @@ pip install FoolPyWebView
 以下是一个简单的 FoolPyWebView 的使用示例：
 
 ```python
-# 请在这里写一些使用示例代码
+# 请看example文件夹
 ```
 
 ## 开源许可证
