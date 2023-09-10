@@ -1,6 +1,6 @@
-[中文版本](README.md)
-[English Version](README_EN.md)
-[Japanese Version](README_JP.md)
+- [中文版本](README.md)
+- [English Version](README_EN.md)
+- [Japanese Version](README_JP.md)
 
 # FoolPyWebView
 
