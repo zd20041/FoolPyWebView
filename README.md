@@ -1,5 +1,6 @@
 # FoolPyWebView
-
+超级简单的python webview库 支持 文件拖拽 窗口透明 等 这些都是 pywebview 做不到的
+可以做很多很酷的效果 比如窗口出现和退出时候的css特效 这些也是 pywebview所不支持的 但 pywebview很轻量级 我这个是基于pyqt QtWebEngineWidgets
 FoolPyWebView 是一个基于 PyQt5 的 QtWebEngineWidgets 进行二次封装的库。这个库的主要目标是提供一个与 JavaScript 和 Python 之间无缝互通的平台，无论是 JavaScript 调用 Python，还是 Python 调用 JavaScript，它都能完全支持。其返回值对对象、字典、数组等类型的支持也非常完整。此外，FoolPyWebView 还重写了 dragEvent，从而实现了拖拽文件并获取文件路径的功能。它还支持多窗口操作，并且用户可以在 HTML 中设置 #fool-drag，让 DOM 支持拖拽移动窗口。
 
 ## 功能特性
