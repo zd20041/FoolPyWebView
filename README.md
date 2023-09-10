@@ -1,3 +1,7 @@
+[中文版本](README.md)
+[English Version](README_EN.md)
+[Japanese Version](README_JP.md)
+
 # FoolPyWebView
 超级简单的python webview库 支持 文件拖拽 窗口透明 等 这些都是 pywebview 做不到的
 可以做很多很酷的效果 比如窗口出现和退出时候的css特效 这些也是 pywebview所不支持的 但 pywebview很轻量级 我这个是基于pyqt QtWebEngineWidgets
