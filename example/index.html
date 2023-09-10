@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body,
+        .box {
+            width: 100%;
+            height: 100%;
+            /* 透明 */
+            background-color: transparent !important;
+        }
+    </style>
+    <script src="qrc:///qtwebchannel/qwebchannel.js"></script>
+    <script>
+        async function sendMessage() {
+            let res = await py_fn.message("Hello World!", 123);
+        }
+
+        async function call_py_js() {
+            let res = await py_fn.run_js_fn();
+
+        }
+
+        const test_pyfn = (msg)=>{
+            // return 'test_pyfn' + msg;
+            return {
+                a: 1,
+                b: 2,
+                c: 3,
+                d: 4,
+                e: 5,}
+        }
+
+        window.test_pyfn = test_pyfn;
+
+        window.addEventListener("FoolJsReady", (e) => {
+            FoolJsInit();
+        })
+
+
+        window.aaaaaa = ()=>{
+            console.log('aaaaaa');
+            return 'aaaaaa';
+        }
+
+    </script>
+    <div class="box">
+        <button onclick="sendMessage()">发送消息给python</button>
+        <button onclick="call_py_js()">调用python 让python调用js</button>
+
+        <div id="fool-drag">拖拽我</div>
+        <style>
+            #fool-drag {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                /* 禁止选择 */
+                user-select: none;
+            }
+        </style>
+
+
+
+
+    </div>
+</body>
+
+</html>
