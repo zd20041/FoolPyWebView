@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: FoolPyWebView
+Version: 1.5.0
+Summary: 超简单的pywebview UI库 支持py和js的相互通信 支持文件拖拽
+Home-page: https://github.com/zd20041/FoolPyWebView
+Author: zd2004
+Author-email: samuraizd@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+- [中文版本](README.md)
+- [English Version](README_EN.md)
+- [Japanese Version](README_JP.md)
+
+# FoolPyWebView
+
+FoolPyWebView is a super-simple Python webview library that offers features such as file dragging, window transparency, and more that pywebview doesn't support. It allows creating many cool effects, such as CSS effects when the window appears and exits - another feature not supported by pywebview. While pywebview is lightweight, FoolPyWebView is based on PyQt5's QtWebEngineWidgets.
+
+FoolPyWebView is a library encapsulated on PyQt5's QtWebEngineWidgets. The main goal of this library is to provide a seamless platform for JavaScript and Python to interact with each other. Whether it's JavaScript calling Python or Python calling JavaScript, it fully supports it. It also fully supports return values for types such as objects, dictionaries, arrays, etc. In addition, FoolPyWebView has rewritten the dragEvent to implement the function of dragging files and obtaining file paths. It also supports multi-window operations, and users can set #fool-drag in HTML to allow DOM to support dragging and moving windows.
+
+## Features
+
+- **Seamless Data Interaction**: Fully supports seamless data interaction between JavaScript and Python, whether it is JavaScript calling Python or Python calling JavaScript.
+
+- **Type Compatibility**: The returned data types support a variety of types, including objects, dictionaries, arrays, etc.
+
+- **Drag and Drop File Functionality**: Rewritten dragEvent to implement the function of dragging files and obtaining file paths.
+
+- **Drag and Move Screen**: Users can set #fool-drag in HTML, allowing the DOM to support dragging and moving the screen.
+
+- **Multi-window Support**: Can satisfy user needs for multi-window operations.
+
+## Upcoming Features
+
+1. **Real-Time Data Synchronization**: We plan to add a real-time data synchronization feature similar to Vuex.
+
+2. **Multi-Window Management System**: We are in the process of developing a multi-window management system that can manage parent-child relationships between windows.
+
+3. **Prefabricated HTML Components**: We will launch prefabricated HTML components, such as nav bar.
+
+## Installation
+
+You can install FoolPyWebView through pip:
+
+```bash
+pip install FoolPyWebView
+```
+
+## Usage
+
+Below is a simple example of using FoolPyWebView:
+
+```python
+# Please see the example folder
+```
+
+## License
+
+This project is licensed under the MIT License. For details, please refer to the [LICENSE](LICENSE) file.
+
+## Contribution
+
+If you want to contribute to this project, feel free to submit a pull request or raise your questions or suggestions in the issue section.
+
+## Support
+
+If you encounter any problems during use, or have any questions, you can seek help from us by submitting an issue. We will respond to your request as soon as possible.
+
+---
+
+We hope FoolPyWebView can help you better interact between Python and JavaScript!
